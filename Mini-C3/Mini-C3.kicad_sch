@@ -775,13 +775,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+			(property "Reference" "SW1"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "SW_Push"
@@ -793,12 +792,13 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
+			(property "Footprint" "MixLib:SW_Slide-03_P2.54_L9_W4_H7"
+				(at -0.762 9.144 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
@@ -883,24 +883,8 @@
 						(type none)
 					)
 				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			)
+			(symbol "SW_Push_1_1"
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
@@ -912,6 +896,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -944,7 +946,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+			(property "Footprint" "MixLib:MyPinHeader-01x02-vertical"
 				(at 1.27 12.954 0)
 				(effects
 					(font
@@ -1088,7 +1090,7 @@
 			)
 			(symbol "TB_1X2_1_1"
 				(pin input line
-					(at 8.89 2.54 180)
+					(at 8.89 -2.54 180)
 					(length 3.81)
 					(name "~"
 						(effects
@@ -1106,7 +1108,7 @@
 					)
 				)
 				(pin input line
-					(at 8.89 -2.54 180)
+					(at 8.89 2.54 180)
 					(length 3.81)
 					(name "~"
 						(effects
@@ -1261,6 +1263,203 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Jumper:Jumper_3_Open"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at -2.54 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_3_Open"
+				(at 0 2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 3-pole, both open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPDT"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*3Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_3_Open_0_0"
+				(circle
+					(center -3.302 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.302 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_3_Open_0_1"
+				(arc
+					(start -0.254 1.016)
+					(mid -1.651 1.4992)
+					(end -3.048 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 3.048 1.016)
+					(mid 1.651 1.4992)
+					(end 0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_3_Open_1_1"
+				(pin passive line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 6.35 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2122,193 +2321,6 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push_SPDT"
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_Push_SPDT"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Momentary Switch, single pole double throw"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_SPDT_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.016) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_Push_SPDT_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.2032) (xy 2.3368 1.9812)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_Push_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
@@ -2686,16 +2698,6 @@
 		)
 		(uuid "093fb3f3-2220-4c49-8c1f-66a342e2f195")
 	)
-	(wire
-		(pts
-			(xy 130.81 53.34) (xy 133.35 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10c3ddda-4ea9-458f-aeab-cf5d87ce8375")
-	)
 	(polyline
 		(pts
 			(xy 80.01 69.85) (xy 80.01 156.21)
@@ -2725,16 +2727,6 @@
 			(type default)
 		)
 		(uuid "166d8cb4-bb9e-4dd8-9f3b-8f0d24ab9b99")
-	)
-	(wire
-		(pts
-			(xy 130.81 58.42) (xy 135.89 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24736bda-bbff-4f24-b0f9-58447cceca22")
 	)
 	(wire
 		(pts
@@ -2788,13 +2780,23 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 180.34) (xy 35.56 180.34)
+			(xy 33.02 180.34) (xy 35.56 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "349205b8-386c-4c8e-98d2-04a71ae0bdf6")
+	)
+	(wire
+		(pts
+			(xy 140.97 54.61) (xy 133.35 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35277824-e8a6-409b-9209-953bdd6b1ee3")
 	)
 	(wire
 		(pts
@@ -2805,16 +2807,6 @@
 			(type default)
 		)
 		(uuid "38da0cc5-e100-4f1a-b054-066362c840f1")
-	)
-	(wire
-		(pts
-			(xy 119.38 55.88) (xy 120.65 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f9fd0af-a57e-40e0-8378-00864e1b6dad")
 	)
 	(wire
 		(pts
@@ -2835,6 +2827,16 @@
 			(type default)
 		)
 		(uuid "483171d7-a4bb-4807-9dd5-ed29613787ff")
+	)
+	(wire
+		(pts
+			(xy 114.3 54.61) (xy 120.65 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "528c4160-37c1-4210-ba6b-76ea6eb1ec2b")
 	)
 	(wire
 		(pts
@@ -2998,6 +3000,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 52.07) (xy 140.97 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e788184-e145-4c2f-8cd1-718b11019ae2")
+	)
+	(wire
+		(pts
 			(xy 50.8 121.92) (xy 50.8 124.46)
 		)
 		(stroke
@@ -3005,6 +3017,16 @@
 			(type default)
 		)
 		(uuid "91a83d95-5c07-48e4-af6e-320f7bf85f84")
+	)
+	(wire
+		(pts
+			(xy 114.3 52.07) (xy 114.3 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a65d31-36ad-4052-9f47-e3bcffc0b52a")
 	)
 	(wire
 		(pts
@@ -3038,6 +3060,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 58.42) (xy 127 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b754beb-b239-4e52-a3ee-b43fb60c34ec")
+	)
+	(wire
+		(pts
 			(xy 69.85 137.16) (xy 68.58 137.16)
 		)
 		(stroke
@@ -3045,16 +3077,6 @@
 			(type default)
 		)
 		(uuid "9c6bc31e-7313-49e6-a8d0-7b0df35183d0")
-	)
-	(wire
-		(pts
-			(xy 135.89 58.42) (xy 135.89 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9db11376-1127-4f4f-be21-403f79673d42")
 	)
 	(wire
 		(pts
@@ -3125,16 +3147,6 @@
 			(type default)
 		)
 		(uuid "bd964936-d24a-4abb-930d-24c23ddafbae")
-	)
-	(wire
-		(pts
-			(xy 31.75 177.8) (xy 31.75 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c1d0b293-846d-4fa9-a6ed-4b2b41593b1b")
 	)
 	(wire
 		(pts
@@ -4300,6 +4312,17 @@
 		)
 		(uuid "252cb37b-fe3b-4983-a94f-fbb9a74b72fd")
 	)
+	(label "Vcc"
+		(at 33.02 180.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2d4c9f54-f090-4427-bc29-84cf195ef808")
+	)
 	(label "Pin8"
 		(at 69.85 139.7 0)
 		(fields_autoplaced yes)
@@ -4587,7 +4610,7 @@
 		(uuid "b4d1ee45-d14b-444c-b5b4-86ac5c270d41")
 	)
 	(label "Vcc"
-		(at 119.38 55.88 180)
+		(at 127 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4851,71 +4874,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 31.75 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "074c9e2c-be52-4e59-b35d-5e36a7bee84e")
-		(property "Reference" "#PWR03"
-			(at 31.75 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 31.496 173.736 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 31.75 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "edbdd691-042d-4707-90cd-50e206eb7174")
-		)
-		(instances
-			(project "Mini-C3"
-				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 74.93 144.78 0)
 		(mirror y)
@@ -5170,7 +5128,7 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
+		(pin "3"
 			(uuid "6ad8afcb-2abd-4f35-a61e-126651a05bf9")
 		)
 		(pin "2"
@@ -6166,76 +6124,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_SPDT")
-		(at 125.73 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5bbc90e0-0361-4567-afde-abac9ba0a17f")
-		(property "Reference" "SW2"
-			(at 125.984 44.958 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Sensors voltage switch"
-			(at 125.984 47.498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "MixLib:SW_Slide-03_P2.54_L9_W4_H7"
-			(at 125.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 125.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Momentary Switch, single pole double throw"
-			(at 125.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "04231cf8-c82a-4ac3-bf71-09c613f6c199")
-		)
-		(pin "1"
-			(uuid "377460cb-c86c-4652-8385-2cc221d46318")
-		)
-		(pin "3"
-			(uuid "cb98b17c-810f-4494-b36c-ecff755fd71c")
-		)
-		(instances
-			(project ""
-				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 115.57 132.08 0)
 		(unit 1)
@@ -6263,7 +6151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "MixLib:Bornera_2_duo"
 			(at 115.57 132.08 0)
 			(effects
 				(font
@@ -6402,7 +6290,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MixLib:LED_0805_2012Metric"
+		(property "Footprint" "MixLib:LED_1206_3216Metric"
 			(at 39.37 180.34 0)
 			(effects
 				(font
@@ -6439,6 +6327,142 @@
 			(project ""
 				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_3_Open")
+		(at 127 54.61 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76c14ffd-ff2c-44cd-90ea-caae73c07136")
+		(property "Reference" "JP1"
+			(at 127 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Sensors voltage jumper"
+			(at 127 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm"
+			(at 127 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 3-pole, both open"
+			(at 127 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7668ff16-00e4-4a4b-bf83-837c46f25437")
+		)
+		(pin "2"
+			(uuid "c15212c7-bc66-49fe-ab9a-8d14e73e9519")
+		)
+		(pin "3"
+			(uuid "45160a3b-b02c-4c22-9b0e-2f30c762028a")
+		)
+		(instances
+			(project ""
+				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 114.3 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e5abbb3-4c6c-40fc-b447-19f15d6aa22f")
+		(property "Reference" "#PWR03"
+			(at 114.3 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 113.792 48.514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 114.3 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65430c76-3b96-4451-b07b-fa08fe42d36f")
+		)
+		(instances
+			(project "Mini-C3"
+				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -6945,7 +6969,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "MixLib:MyPinHeader-01x02-vertical"
 			(at 27.94 28.956 0)
 			(effects
 				(font
@@ -7219,137 +7243,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 133.35 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d3d0e757-217f-4931-b759-d267f5b77940")
-		(property "Reference" "#PWR011"
-			(at 133.35 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 132.842 49.784 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.35 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 133.35 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "48f56a85-6cf6-45f6-a9ab-d7b1bfd86b8c")
-		)
-		(instances
-			(project "Mini-C3"
-				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 135.89 57.15 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d5d238d5-6e1c-41f1-8f44-1eb7e1b7636e")
-		(property "Reference" "#PWR019"
-			(at 135.89 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 135.636 53.594 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 135.89 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f3a8806-49f1-4909-8d10-6013c62c7b5a")
-		)
-		(instances
-			(project "Mini-C3"
-				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
-					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 100.33 113.03 0)
 		(unit 1)
@@ -7573,7 +7466,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "MixLib:Bornera_2_duo"
 			(at 115.57 142.24 0)
 			(effects
 				(font
@@ -7762,6 +7655,72 @@
 			(project ""
 				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 140.97 52.07 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe8bdcb9-c66a-41be-8c86-e53df9806f53")
+		(property "Reference" "#PWR022"
+			(at 140.97 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 140.716 48.514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 140.97 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87402fea-2add-45e4-b1c4-90d741f9cd5a")
+		)
+		(instances
+			(project "Mini-C3"
+				(path "/4c262fd9-29ee-4dfd-b061-5e4f8b478e2c"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
