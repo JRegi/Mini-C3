@@ -1880,6 +1880,7 @@
 			(uuid "f79ee3e9-7e81-4d8a-b375-5bf8bb16fa91")
 		)
 		(model "${KICAD8_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D4.3mm_W1.9mm_P5.00mm.wrl"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
