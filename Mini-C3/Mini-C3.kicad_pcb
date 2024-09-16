@@ -5296,6 +5296,17 @@
 				(xyz -90 0 0)
 			)
 		)
+		(model "C:/Users/Usuario/Desktop/pendrive verde/MixLib/MixLib.3dshapes/ESP32-C3_SUPERMINI.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
 	)
 	(footprint "MixLib:PinHeader_1x03_P2.54-THT"
 		(layer "F.Cu")

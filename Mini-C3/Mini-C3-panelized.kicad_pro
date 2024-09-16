@@ -38,7 +38,7 @@
         "other_text_upright": false,
         "pads": {
           "drill": 1.2,
-          "height": 2.0,
+          "height": 2.2,
           "width": 2.2
         },
         "silk_line_width": 0.1,
@@ -706,7 +706,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "gerber/",
+      "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
