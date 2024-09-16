@@ -1,7 +1,7 @@
 # MiniC3 - PCB
 
 >
->  Board still in development
+>  Board in development
 >
 
 ## Description:
