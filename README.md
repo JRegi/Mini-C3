@@ -1,9 +1,5 @@
 # MiniC3 - PCB
 
->
->  Board in development
->
-
 ## Description:
 MiniC3 is a PCB meant for amateur MiniSumo, featuring:
   -  ESP32-C3 Super Mini 
