@@ -1,5 +1,7 @@
 # MiniC3 - PCB
 
+![MiniC3-photo](https://github.com/JRegi/Mini-C3/blob/main/MiniC3-Photo.jpg?raw=true)
+
 ## Description:
 MiniC3 is a PCB meant for amateur MiniSumo, featuring:
   -  ESP32-C3 Super Mini 
